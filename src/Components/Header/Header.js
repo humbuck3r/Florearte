@@ -1,33 +1,30 @@
 import React from 'react';
-import {Navbar,Nav,Form,FormControl,Button,Container} from 'react-bootstrap';
+import bar from '../../Img/bars-solid.svg'
 import logo from '../../Img/logoblanco.png';
 
 const Header = () => {
     return(
-    <><header className="container">
-        <Container>
-    <section className='nav-bar' id="">
-            <div className='navbar2'>
-                <Navbar fixed="top" bg="dark" variant="dark">
-                    <Navbar.Brand href="/">
-                        <img src={logo} className="logo"/>
-                        
-                    </Navbar.Brand >
-                    <Nav className="mr-auto" >
-                        <Nav.Link href="/">Inicio</Nav.Link>
-                        <Nav.Link href="/Products">Productos</Nav.Link>
-                        <Nav.Link href="/Courses">Cursos</Nav.Link>
-                        <Nav.Link href="/About">Quien soy?</Nav.Link>
-                        <Nav.Link href="/Contact">Contacto</Nav.Link>
-                    </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Buscar en florearte" className="mr-sm-3" />
-                        <Button variant="outline-light">Buscar</Button>
-                    </Form>
-                </Navbar>
-            </div>
-        </section></Container>
-        </header></>
+    <><header className="header-content">
+        
+        <nav>
+            <a href="/">
+            <img src={logo} className="logo" alt=""></img>
+        </a>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="Products">Productos</a></li>
+                <li><a href="About">Quien soy?</a></li>
+                <li><a href="Courses">Cursos</a></li>
+                <li><a href="Contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div id="icon-menu">
+            <a href=" alt="><img src={bar}></img></a>
+
+
+        </div>
+    </header></>
 
 
     )
@@ -35,3 +32,4 @@ const Header = () => {
 
 
 export default Header;
+

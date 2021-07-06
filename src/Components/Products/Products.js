@@ -1,119 +1,404 @@
 import React from 'react';
-import { Card, CardDeck, } from 'react-bootstrap';
+import taza from '../../Img/taza.jpg'
+import tazagrande from '../../Img/tazagrande.jpg'
+import tetas from '../../Img/tetas.jpg'
+import picada from '../../Img/picada.jpg'
 
-const Products =() =>{
+const Products = () => {
+
     return(
-        <CardDeck>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card><Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card><Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card><Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card><Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
+    <div className="container-products">
+          
+            <h1>Mates</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <h1>Tazas</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <h1>Chops</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <h1>Macetas</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <h1>Aromaterapia</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <h1>Vajilla</h1>
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={taza} className="img-fluid" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tazagrande} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={tetas} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="card">
+                <div className="pic">
+                  <img src={picada} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div> 
+
+
+
+
 
     )
+
+
+
 }
+
 
 
 

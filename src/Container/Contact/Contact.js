@@ -1,59 +1,60 @@
-import React from 'react';
-import { InputGroup, FormControl } from 'react-bootstrap';
+import React, { useState } from 'react';
+import {db} from '../../Firebaseconfig';
 
-const Contact =() =>{
-    return(
-        <div>
-  <InputGroup className="mb-3">
-    <InputGroup.Prepend>
-      <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-    </InputGroup.Prepend>
-    <FormControl
-      placeholder="Username"
-      aria-label="Username"
-      aria-describedby="basic-addon1"
-    />
-  </InputGroup>
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+    
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    
+    db.collection("contacts")
+    .add({
+      name:name,
+      email: email,
+      message:message,
+    })
+    .then(() => {
+      alert("Mensaje enviado");
+    })
+    .catch((error => {
+      alert(error.message);
+    })
+    )};
+    
 
-  <InputGroup className="mb-3">
-    <FormControl
-      placeholder="Recipient's username"
-      aria-label="Recipient's username"
-      aria-describedby="basic-addon2"
-    />
-    <InputGroup.Append>
-      <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-    </InputGroup.Append>
-  </InputGroup>
-
-  <label htmlFor="basic-url">Your vanity URL</label>
-  <InputGroup className="mb-3">
-    <InputGroup.Prepend>
-      <InputGroup.Text id="basic-addon3">
-        https://example.com/users/
-      </InputGroup.Text>
-    </InputGroup.Prepend>
-    <FormControl id="basic-url" aria-describedby="basic-addon3" />
-  </InputGroup>
-
-  <InputGroup className="mb-3">
-    <InputGroup.Prepend>
-      <InputGroup.Text>$</InputGroup.Text>
-    </InputGroup.Prepend>
-    <FormControl aria-label="Amount (to the nearest dollar)" />
-    <InputGroup.Append>
-      <InputGroup.Text>.00</InputGroup.Text>
-    </InputGroup.Append>
-  </InputGroup>
-
-  <InputGroup>
-    <InputGroup.Prepend>
-      <InputGroup.Text>With textarea</InputGroup.Text>
-    </InputGroup.Prepend>
-    <FormControl as="textarea" aria-label="With textarea" />
-  </InputGroup>
-</div>
-    )
+  return (
+    <form className="form" onSubmit={handleSubmit}>   
+ <ul>
+  <li>
+    <label for="name">Nombre:</label>
+    <input 
+    type="text" 
+    id="name" 
+    name="user_name" 
+    placeholder="nombre" 
+    value={name} onChange={(e) => setName(e.target.value)}/>
+  </li>
+  <li>
+    <label for="mail">Correo electrónico:</label>
+    <input
+      type="email"
+      id="mail"
+      name="user_mail" 
+      placeholder="mail"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}/>
+  </li>
+  <li>
+    <label for="msg">Mensaje:</label>
+    <textarea id="msg" name="user_message" placeholder="deja tu consulta" value={message} onChange={(e) => setMessage(e.target.value)}/>
+  </li>
+  <button type="submit"> Enviar consulta</button>
+ </ul>
+</form>);
 }
 
 

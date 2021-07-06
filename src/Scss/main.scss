@@ -1,7 +1,11 @@
+@import '../Components//Wsp/wsp.scss';
 @import '../Components/About/About.scss';
-@import '../Components/Courses/Courses.scss';
+@import '../Container/Courses/Courses.scss';
 @import '../Components/Header/Header.scss';
-@import '../Components/Slider/Slider.scss';
+@import '../Components/Splash/Splash.scss';
 @import '../Components/Footer/Footer.scss';
-@import '../Scss/default';
-@import 'overrides'
+@import '../Container/Contact/Contact.scss';
+@import 'overrides';
+@import '../Components/Slider/Prod.scss';
+@import '../Components/Products/Products.scss';
+@import '../Scss/variables'

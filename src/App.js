@@ -1,16 +1,18 @@
 import './App.scss';
+import Wsp from '../src/Components/Wsp/Wsp';
 import About from './Components/About/About';
 import Header from '../src/Components/Header/Header';
-import Slider from '../src/Components/Slider/Slider';
+import Splash from './Components/Splash/Splash';
+import Prod from './Components/Slider/Prod'
 import Footer from './Components/Footer/Footer';
 import Products from './Components/Products/Products';
-import Courses from './Components/Courses/Courses';
+import Courses from './Container/Courses/Courses';
 import Contact from './Container/Contact/Contact';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    
 } from 'react-router-dom'
 
 const App =() => {
@@ -21,7 +23,9 @@ return (
     <Switch>
       <Route exact path="/">   
         <Header />
-        <Slider />
+        <Wsp />
+        <Splash />
+        <Prod />
         <Footer/>
       </Route>  
       <Route path="/Products">
@@ -39,7 +43,7 @@ return (
           <About/>
           <Footer/>
       </Route>
-      <Route>
+      <Route path="/Contact">
           <Header />
           <Contact/>
           <Footer/>
