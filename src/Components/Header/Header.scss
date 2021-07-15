@@ -13,8 +13,6 @@ header{
     
 }
 
-
-
 .logo{
     height: 120px;
     width: 100px;
@@ -23,14 +21,48 @@ header{
     margin-top: -5px;
 }
 
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 50px;
+    line-height: 60px;
+    display: none;
+    :hover{
+        color: $accent-color;
+    }
+    @include breakpoint("mobile"){
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+}
+
 nav ul {
-    float:right
+    margin-left: 300px;
+    
+    
+    @include breakpoint("mobile"){
+        background-color: black;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        top: 111px;
+        padding: 20px;
+        padding-left: 100px;
+        text-align: center;
+        line-height: 20px;
+        left: 100%;
+        transition: left;
+    }
+    
     
 }
 
 
 nav ul li {
-    
     display: inline-block;
     text-decoration: none;
     padding-top: 50px;
@@ -38,40 +70,28 @@ nav ul li {
     text-shadow: 1px 1px 2px black;
     a:hover {
     color: $accent-color;
-    text-decoration: none;
-    
-        
-}
+    text-decoration: none;}
 }
 
 nav ul li a{
     color: $primary-color-text;
-    
     margin-right: 80px;
-    
 
+
+    @include breakpoint("mobile"){
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        background-color: black;
+    }
 }
 
-#icon-menu {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    z-index: 100px;
-    right: 20px;
-    top: 45px;
-    margin-right: 10px;
-    color: $primary-color-dark;
-    display: none;
-    
-}
+
 
 #icon-menu:hover{
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1220 px){
-    .header-content{
-        max-width: 1000px;
-        padding: 0 20px;
-    }
+.visible{
+    left: 0;
 }

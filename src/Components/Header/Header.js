@@ -1,16 +1,17 @@
 import React from 'react';
-import bar from '../../Img/bars-solid.svg'
 import logo from '../../Img/logoblanco.png';
 
 const Header = () => {
+    
+
     return(
     <><header className="header-content">
-        
-        <nav>
+        <nav className="nav">
             <a href="/">
             <img src={logo} className="logo" alt=""></img>
+            <button className="nav-toggle" > <i className="fas fa-bars" /> </button>
         </a>
-            <ul>
+            <ul className="nav" >
                 <li><a href="/">Inicio</a></li>
                 <li><a href="Products">Productos</a></li>
                 <li><a href="About">Quien soy?</a></li>
@@ -19,11 +20,7 @@ const Header = () => {
             </ul>
         </nav>
 
-        <div id="icon-menu">
-            <a href=" alt="><img src={bar}></img></a>
-
-
-        </div>
+        
     </header></>
 
 

@@ -1,60 +1,50 @@
-import React, { useState } from 'react';
-import {db} from '../../Firebaseconfig';
+import React from 'react';
+import {Form, Button} from 'react-bootstrap';
+import imglogo from '../../Img/logo-fondo-solo.png'
+
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-    
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
-    
-    db.collection("contacts")
-    .add({
-      name:name,
-      email: email,
-      message:message,
-    })
-    .then(() => {
-      alert("Mensaje enviado");
-    })
-    .catch((error => {
-      alert(error.message);
-    })
-    )};
-    
 
-  return (
-    <form className="form" onSubmit={handleSubmit}>   
- <ul>
-  <li>
-    <label for="name">Nombre:</label>
-    <input 
-    type="text" 
-    id="name" 
-    name="user_name" 
-    placeholder="nombre" 
-    value={name} onChange={(e) => setName(e.target.value)}/>
-  </li>
-  <li>
-    <label for="mail">Correo electrónico:</label>
-    <input
-      type="email"
-      id="mail"
-      name="user_mail" 
-      placeholder="mail"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}/>
-  </li>
-  <li>
-    <label for="msg">Mensaje:</label>
-    <textarea id="msg" name="user_message" placeholder="deja tu consulta" value={message} onChange={(e) => setMessage(e.target.value)}/>
-  </li>
-  <button type="submit"> Enviar consulta</button>
- </ul>
-</form>);
+  return(
+      <section className="backform2">
+      <section className="backform ">
+        
+  <div className="container ">
+
+  
+    <Form className="form">
+      <Form.Group controlId="formBasicEmail">
+    <Form.Label>Nombre</Form.Label>
+    <Form.Control type="name" placeholder="Ingresa tu nombre" />
+    <Form.Text className="text-muted">
+      *ingresa nombre y apellido
+    </Form.Text>
+  </Form.Group>
+
+
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email</Form.Label>
+    <Form.Control type="email" placeholder="Ingresa tu email" />
+    <Form.Text className="text-muted">
+      
+    </Form.Text>
+  </Form.Group>
+
+
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Dejanos tu consulta.</Form.Label>
+    <Form.Control as="textarea" rows={15} />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Enviar consulta
+  </Button>
+</Form>
+
+    </div>
+    </section>
+    </section>
+  )
+
 }
 
 

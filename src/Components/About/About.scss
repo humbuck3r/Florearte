@@ -1,3 +1,22 @@
 .container p {
-    margin-top: 300px;
+    margin-top: 10px;
+    font-family: $font-primary;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.about-pic{
+    height: 750px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container img{
+    @include breakpoint("mobile"){
+        height: auto;
+    }
+     @include breakpoint("tablet"){
+        height: auto;
+    }
 }

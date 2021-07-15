@@ -21,32 +21,36 @@ const App =() => {
 return (
 <Router>
     <Switch>
-      <Route exact path="/">   
+    <Route exact path="/">   
         <Header />
         <Wsp />
         <Splash />
         <Prod />
         <Footer/>
-      </Route>  
-      <Route path="/Products">
-          <Header />
-          <Products/>
-          <Footer/>
-      </Route>
-      <Route path="/Courses">
-          <Header />
-          <Courses/>
-          <Footer/>
-      </Route>
-      <Route path="/About">
-          <Header />
-          <About/>
-          <Footer/>
-      </Route>
-      <Route path="/Contact">
-          <Header />
-          <Contact/>
-          <Footer/>
+    </Route>  
+    <Route path="/Products">
+        <Header />
+        <Wsp/>
+        <Products/>
+        <Footer/>
+    </Route>
+    <Route path="/Courses">
+        <Header />
+        <Wsp/>
+        <Courses/>
+        <Footer/>
+    </Route>
+    <Route path="/About">
+        <Header />
+        <Wsp/>
+        <About/>
+        <Footer/>
+    </Route>
+    <Route path="/Contact">
+        <Header />
+        <Wsp/>
+        <Contact/>
+        <Footer/>
       </Route>
     </Switch>
         

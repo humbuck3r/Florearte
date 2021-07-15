@@ -1,19 +1,30 @@
 .container-products {
-    margin-top: 250px;
     position: relative;
-    left: 200px;
+    left: 110px;
 }
 
-.container-products h1{
+.container-products  h1{
+    color: $accent-color;
+    right: 120px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.msjinsta h2{
+    
     color: $accent-color;
     position: relative;
-    left: 720px;
-    margin-bottom: 40px;
-    margin-top: 25px;
+    left: 140px;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+    a:hover{
+        text-decoration: none;
+        
+    }
 }
-
-
-.card{
-    margin-top: 10px;
+.msjinsta a{
+    color: $accent-color;
 }
-

@@ -1,35 +1,20 @@
-@mixin tablet {
-  @media only screen and (min-width: 768px) {
-    @content;
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media only screen and (max-width: 360px)  {
+      @content;
+    }
+  } @else if $breakpoint == "mobile-height" {
+    @media only screen and (min-height: 350px)  {
+      @content;
+    }
   }
-}
-
-@mixin desktop {
-  @media only screen and (min-width: 992px) {
-    @content;
-  }
-}
-
-@mixin large {
-  @media only screen and (min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media only screen and (min-width: 600px) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media only screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin large {
-  @media only screen and (min-width: 1440px) {
-    @content;
+  @else if $breakpoint == "desktop" {
+    @media only screen and (max-width: 1000px) and (min-height: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
   }
 }
