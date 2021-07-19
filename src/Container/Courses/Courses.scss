@@ -17,6 +17,11 @@
 
       
     }
+    @include breakpoint("desktop"){
+      margin-left: 650px;
+
+      
+    }
 }
 .courses h2{
   color: $accent-color;

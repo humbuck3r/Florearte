@@ -1,32 +1,33 @@
-import React from 'react';
-import logo from '../../Img/logoblanco.png';
+import React, { useState } from 'react';
+import Logo from '../../Img/logoblanco.png';
 
-const Header = () => {
-    
+const Header = props => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-    return(
-    <><header className="header-content">
-        <nav className="nav">
-            <a href="/">
-            <img src={logo} className="logo" alt=""></img>
-            <button className="nav-toggle" > <i className="fas fa-bars" /> </button>
-        </a>
-            <ul className="nav" >
-                <li><a href="/">Inicio</a></li>
-                <li><a href="Products">Productos</a></li>
-                <li><a href="About">Quien soy?</a></li>
-                <li><a href="Courses">Cursos</a></li>
-                <li><a href="Contact">Contacto</a></li>
-            </ul>
-        </nav>
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  return (
+      <header>
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+      <a class="navbar-brand text-info font-weight-bolder" href="/">
+        <img src={Logo} alt="Logo" width="75" height="90" className="vertical-align-middle" />
+        <span className=""></span>
+      </a>
+      <button class="custom-toggler navbar-toggler" id="btn-toggle"  type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarsExample09">
+        <a className="nav-link text-light" href="/">Inicio</a>
+        <a className="nav-link text-light" href="/Products">Productos</a>
+        <a className="nav-link text-light" href="/About">Quien soy?</a>
+        <a className="nav-link text-light" href="/Courses">Cursos</a>
+        <a className="nav-link text-light" href="/Contact">Contacto</a>
         
-    </header></>
-
-
-    )
+      </div>
+    </nav>
+    </header>
+  );
 }
 
-
 export default Header;
-

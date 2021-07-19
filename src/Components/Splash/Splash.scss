@@ -35,6 +35,10 @@
         left: 0px;
         top: 390px;
     }
+    @include breakpoint('desktop'){
+        top: 400px;
+        left: 900px;
+    }
 }
 .btn{
     color: #FF4081;

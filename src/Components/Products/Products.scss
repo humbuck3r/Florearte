@@ -1,6 +1,9 @@
 .container-products {
     position: relative;
     left: 110px;
+    @include breakpoint('desktop') {
+        left: 200px;
+    }
 }
 
 .container-products  h1{
@@ -11,18 +14,24 @@
     margin-bottom: 10px;
     margin-top: 60px;
     text-shadow: 1px 1px 2px black;
+    @include breakpoint('desktop'){
+        right: 210px;
+    }
 }
 
 .msjinsta h2{
     
     color: $accent-color;
     position: relative;
-    left: 140px;
+    left: 100px;
     text-shadow: 1px 1px 2px black;
     text-decoration: none;
     a:hover{
         text-decoration: none;
         
+    }
+    @include breakpoint('desktop'){
+        left: 280px;
     }
 }
 .msjinsta a{
