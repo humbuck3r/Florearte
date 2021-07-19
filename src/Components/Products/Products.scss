@@ -4,6 +4,9 @@
     @include breakpoint('desktop') {
         left: 200px;
     }
+    @include breakpoint('mobile'){
+        left: 0px;
+    }
 }
 
 .container-products  h1{
@@ -17,7 +20,11 @@
     @include breakpoint('desktop'){
         right: 210px;
     }
+    @include breakpoint('mobile'){
+        left: 0px;
+    }
 }
+
 
 .msjinsta h2{
     
@@ -32,6 +39,10 @@
     }
     @include breakpoint('desktop'){
         left: 280px;
+    }
+    @include breakpoint('mobile'){
+        left: 0px;
+        text-align: center;
     }
 }
 .msjinsta a{

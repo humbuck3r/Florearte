@@ -39,6 +39,10 @@
         top: 400px;
         left: 900px;
     }
+    @include breakpoint('tablet'){
+        left: 0px;
+        top: 390px;
+    }
 }
 .btn{
     color: #FF4081;

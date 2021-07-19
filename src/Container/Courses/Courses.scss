@@ -1,9 +1,7 @@
 .courses{
   padding: 100px;
   margin-bottom: 250px;
-  @include breakpoint("mobile"){
-      padding: 10px;
-    }
+
 }
 
 .courses h1{
@@ -12,14 +10,18 @@
     margin: 60px;
     text-shadow: 1px 1px 2px black;
     margin-left: 350px;
-    @include breakpoint("mobile"){
-      margin-top: 150px;
-
-      
-    }
+   
     @include breakpoint("desktop"){
       margin-left: 650px;
 
+      
+    }
+    @include breakpoint("mobile"){
+      text-overflow: inherit;
+      position: relative;
+      right: 360px;
+      
+      
       
     }
 }
@@ -32,7 +34,13 @@
 
 .text {
   font-family: $font-primary;
-  
+  @include breakpoint("mobile"){
+      padding: 0px;
+      margin: 0px;
+      
+
+      
+    }
   
 }
 .caro p{
@@ -42,4 +50,12 @@
 
 .carousel{
   margin-bottom: 50px;
+  @include breakpoint('mobile'){
+        margin: 0px;
+        width: 350px;
+        padding: 0px;
+        position: absolute;
+        right: 110px;
+      
+    }
 }
