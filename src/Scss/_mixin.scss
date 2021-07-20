@@ -1,6 +1,6 @@
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == "mobile" {
-    @media only screen and (max-width: 360px)  {
+    @media only screen and (max-width: 480px)  {
       @content;
     }
   } @else if $breakpoint == "mobile-height" {
