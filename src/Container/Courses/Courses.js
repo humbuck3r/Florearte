@@ -31,10 +31,7 @@ const Courses =() =>{
       alt="Second slide"
     />
 
-    <Carousel.Caption className="caro">
-      <h2>Conectacte</h2>
-      <p>Con vos y la naturaleza</p>
-    </Carousel.Caption>
+    
   </Carousel.Item>
   <Carousel.Item>
     <img
@@ -43,10 +40,6 @@ const Courses =() =>{
       alt="Third slide"
     />
 
-    <Carousel.Caption className="caro">
-      <h2>Cursos avanzados</h2>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
       <p className="text">En el año 2017 cree “FloreArte” dándole nombre e  identidad a este proyecto que se venía gestando, hace tiempo, cuando empecé a incursionar en  la cerámica. Un espacio donde muestro a mundo mi labor y mi pasión de crear piezas funcionales que dentro del hogar o los distintos escenarios  tienen una hermosa utilización.<br/> 
