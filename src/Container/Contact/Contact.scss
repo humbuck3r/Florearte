@@ -20,7 +20,9 @@
     background: url(../../Img/logo-fondo-solo.png) right no-repeat ;
     background-size: 700px;
     background-position: 129% ;
-    
+    @include breakpoint ('mobile'){
+        background: none;
+    }
 }
 
 .backform2{
@@ -28,7 +30,9 @@
     background: url(../../Img/logo-fondo-solo.png) left no-repeat ;
     background-size: 700px;
     background-position: -29% ;
-    
+    @include breakpoint ('mobile'){
+        background: none;
+    }
 }
 
 
