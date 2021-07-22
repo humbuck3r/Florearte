@@ -110,7 +110,7 @@ h3{
     left: 100px;
   }
   @include breakpoint('mobile'){
-    left: 30px;
+    left: 40px;
     flex-direction: column;
     
   }
