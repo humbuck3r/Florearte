@@ -1,10 +1,15 @@
 import React from 'react';
 import {  Carousel } from 'react-bootstrap';
-import courses1 from '../../Img/courses1.JPG'
-import courses2 from '../../Img/courses2.JPG'
-import courses3 from '../../Img/courses3.JPG'
+import courses1 from '../../Img/courses1.JPG';
+import courses2 from '../../Img/courses2.JPG';
+import courses3 from '../../Img/courses3.JPG';
+import img from '../../Img/imgcurso.JPG';
+import {Card, Button } from 'react-bootstrap';
 
- 
+
+
+
+
 const Courses =() =>{
     return(
     
@@ -20,8 +25,7 @@ const Courses =() =>{
       alt="First slide"
     />
     <Carousel.Caption className="caro">
-      <h2>Cursos para principiantes.</h2>
-      <p>Conoce las distintas tecnicas.</p>
+      
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -42,16 +46,48 @@ const Courses =() =>{
 
   </Carousel.Item>
 </Carousel>
-      <p className="text">En el año 2017 cree “FloreArte” dándole nombre e  identidad a este proyecto que se venía gestando, hace tiempo, cuando empecé a incursionar en  la cerámica. Un espacio donde muestro a mundo mi labor y mi pasión de crear piezas funcionales que dentro del hogar o los distintos escenarios  tienen una hermosa utilización.<br/> 
-      Este oficio ancestral, que escapa de la rutina para concentrarse en la estimulante técnica de dominar al barro, favorece tanto  la salud mental como  emocional.Trabajar la arcilla es fascinante, esa transformación a partir del modelado de la tierra que después de ser sometida a altas temperaturas adquiere una forma permanente. Me cautiva pensar que la huella de las manos va quedando grabada en la pared de la pieza.<br/>
+      </div>
+        <div><p>En estos cursos podes aprender a trabajar la cerámica desde cero, modelar y esmaltar desde tu propia casa, creando piezas con pasta cerámica. Es complementario al curso de esmaltado en cerámica para principiantes en el cual te enseñaré lo básico en técnicas para decorar y esmaltar tus propias piezas cerámicas.
+La manipulación directa y las diferentes actividades con el barro pueden  despertar una sensación de bienestar que mejora el estado de ánimo y la autoestima. Moldear requiere una gran concentración y esto nos aísla y nos ayuda a entrar en un estado meditativo.
+Modelar cerámica activa la creatividad, descarga de tensión emocional y ayuda a manejar mejor las emociones del día a día. Se crean puentes entre sentidos y sentimientos, logrando vivenciar procesos internos primarios que conducen a expresarse y comunicarse facilitando el surgimiento de un acto creativo. Manipular la arcilla mejora la motricidad gruesa y fina, ayuda a incrementar la percepción y a liberar sentimientos atrapados.
+Al sentir la arcilla entre nuestras manos se genera una sensación de control y dominio lo cual conduce a sentirse más seguro, reforzando así la autoestima.
+El objetico de este taller es crear un primer encuentro con la materia prima: la arcilla, creando un puente con la imaginación con técnicas básicas de modelado, logrando piezas únicas. Lograr una expresión artística como una herramienta de exploración personal que favorezca su calidad de vida. Poder vivir una experiencia emocional enriquecedora a través de la participación en un trabajo  enfocado hacia una meta de carácter artístico.</p>
+</div>
+      
+      <h1 className="titlecur">Cursos disponibles</h1>
+      <div className="cursos">
+      <Card style={{ width: '20rem' }} className="cards">
+  <Card.Img variant="top" src={img} />
+  <Card.Body>
+    <Card.Title>Curso para principiante</Card.Title>
+    <Card.Text>
+      Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
+    </Card.Text>
+    <Button variant="primary" className="btncards">Go somewhere</Button>
+  </Card.Body>
+</Card>
 
-      La pasta requiere dedicación, la construcción de una pieza de cerámica es un proceso largo y cada objeto terminado es un viaje único, de subidas y bajadas. Es un reto constante, que logra desconectarme por varias horas de cualquier preocupación, y al  final, el resultado es gratificante y me pone muy  feliz.<br/>
-      En este taller podes aprender a trabajar la cerámica desde cero, moldear y crear desde tu propio hogar, complementario al curso de esmaltado para principiantes, donde podré facilitarte  técnicas básicas para decorar y crear piezas únicas. <br/>
+ <Card style={{ width: '20rem' }} className="cards">
+  <Card.Img variant="top" src={img} />
+  <Card.Body>
+    <Card.Title>Curso intermedio</Card.Title>
+    <Card.Text>
+      Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
 
-      Desconexión, concentración, paciencia, son conceptos que me surgen al hablar, pensar en cerámica. Monte mi taller en mi hogar, donde trabajo hace ya 4 años. Ocupo también un espacio en Casa Abril, un centro terapéutico ubicado en la ciudad de Mendoza dando talleres de cerámica inicial, como así también en Cultural Palmira. <br/>  
- </p>
-
-      <p></p>
+ <Card style={{ width: '20rem' }} className="cards">
+  <Card.Img variant="top" src={img} />
+  <Card.Body>
+    <Card.Title>Curso avanzado</Card.Title>
+    <Card.Text>
+      Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
         </div>
     </section>
     )

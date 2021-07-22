@@ -9,13 +9,15 @@
       
     }
 }
-
+.courses p{
+  text-align: center;
+}
 .courses h1{
     font-family: $font-primary;
     color: $accent-color;
     margin: 60px;
     text-shadow: 1px 1px 2px black;
-    margin-left: 350px;
+    margin-left: 360px;
    
     @include breakpoint("desktop"){
       margin-left: 650px;
@@ -77,4 +79,54 @@
         padding: 5px;
       
     }
+}
+.titlecur{
+  position: relative;
+  left: 60px;
+  @include breakpoint('mobile'){
+    left: 0px;
+    
+  }
+}
+
+
+
+
+
+h3{
+  color: $accent-color;
+  font-family: $font-primary;
+  position: absolute;
+  left: 80px;
+  padding: 15px;
+}
+
+.cursos{
+  display: flex;
+  flex-direction: row; 
+  position: relative ;
+  left: 350px;
+  @include breakpoint('tablet'){
+    left: 100px;
+  }
+  @include breakpoint('mobile'){
+    left: 20px;
+    flex-direction: column;
+    
+  }
+}
+
+.cards{
+  margin-right: 30px;
+  border-radius: 45%;
+  box-shadow: 5px 6px 3px black;
+  @include breakpoint('mobile'){
+    margin-top: 15px;
+    
+  }
+}
+
+.btncards{
+  :hover{
+  box-shadow: 10px 5px 5px black;}
 }
