@@ -13,7 +13,7 @@
       @content;
     }
   } @else if $breakpoint == "tablet" {
-    @media only screen and (max-width: 1350px) {
+    @media only screen and (max-width: 160px) {
       @content;
     }
   }

@@ -105,15 +105,16 @@ h3{
   display: flex;
   flex-direction: row; 
   position: relative ;
-  left: 350px;
+  left: 60px;
   @include breakpoint('tablet'){
-    left: 100px;
+    left: 30px;
   }
   @include breakpoint('mobile'){
     left: 40px;
     flex-direction: column;
     
   }
+  
 }
 
 .cards{

@@ -47,15 +47,15 @@ const Courses =() =>{
   </Carousel.Item>
 </Carousel>
       </div>
-        <div><p>En estos cursos podes aprender a trabajar la cerámica desde cero, modelar y esmaltar desde tu propia casa, creando piezas con pasta cerámica. Es complementario al curso de esmaltado en cerámica para principiantes en el cual te enseñaré lo básico en técnicas para decorar y esmaltar tus propias piezas cerámicas.
-La manipulación directa y las diferentes actividades con el barro pueden  despertar una sensación de bienestar que mejora el estado de ánimo y la autoestima. Moldear requiere una gran concentración y esto nos aísla y nos ayuda a entrar en un estado meditativo.
-Modelar cerámica activa la creatividad, descarga de tensión emocional y ayuda a manejar mejor las emociones del día a día. Se crean puentes entre sentidos y sentimientos, logrando vivenciar procesos internos primarios que conducen a expresarse y comunicarse facilitando el surgimiento de un acto creativo. Manipular la arcilla mejora la motricidad gruesa y fina, ayuda a incrementar la percepción y a liberar sentimientos atrapados.
-Al sentir la arcilla entre nuestras manos se genera una sensación de control y dominio lo cual conduce a sentirse más seguro, reforzando así la autoestima.
-El objetico de este taller es crear un primer encuentro con la materia prima: la arcilla, creando un puente con la imaginación con técnicas básicas de modelado, logrando piezas únicas. Lograr una expresión artística como una herramienta de exploración personal que favorezca su calidad de vida. Poder vivir una experiencia emocional enriquecedora a través de la participación en un trabajo  enfocado hacia una meta de carácter artístico.</p>
+        <div><p>En este curso podes aprender a trabajar la cerámica desde cero, modelar y esmaltar desde tu propia casa, creando piezas con pasta cerámica. Es complementario al curso de esmaltado en cerámica para principiantes en el cual te enseñaré lo básico en técnicas para decorar y esmaltar tus propias piezas cerámicas.
+        La manipulación directa y las diferentes actividades con el barro pueden  despertar una sensación de bienestar que mejora el estado de ánimo y la autoestima. Moldear requiere una gran concentración y esto nos aísla y nos ayuda a entrar en un estado meditativo.
+        Modelar cerámica activa la creatividad, descarga de tensión emocional y ayuda a manejar mejor las emociones del día a día. Se crean puentes entre sentidos y sentimientos, logrando vivenciar procesos internos primarios que conducen a expresarse y comunicarse facilitando el surgimiento de un acto creativo. Manipular la arcilla mejora la motricidad gruesa y fina, ayuda a incrementar la percepción y a liberar sentimientos atrapados.
+        Al sentir la arcilla entre nuestras manos se genera una sensación de control y dominio lo cual conduce a sentirse más seguro, reforzando así la autoestima.
+        El objetico de este taller es crear un primer encuentro con la materia prima: la arcilla, creando un puente con la imaginación con técnicas básicas de modelado, logrando piezas únicas. Lograr una expresión artística como una herramienta de exploración personal que favorezca su calidad de vida. Poder vivir una experiencia emocional enriquecedora a través de la participación en un trabajo  enfocado hacia una meta de carácter artístico.</p>
 </div>
       
       <h1 className="titlecur">Cursos disponibles</h1>
-      <div className="cursos">
+      <div className="cursos center">
       <Card style={{ width: '20rem' }} className="cards">
   <Card.Img variant="top" src={img} />
   <Card.Body>
@@ -63,7 +63,7 @@ El objetico de este taller es crear un primer encuentro con la materia prima: la
     <Card.Text>
       Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
     </Card.Text>
-    <Button variant="primary" className="btncards">Go somewhere</Button>
+    <Button variant="primary" className="btncards">Proximamente</Button>
   </Card.Body>
 </Card>
 
@@ -74,7 +74,7 @@ El objetico de este taller es crear un primer encuentro con la materia prima: la
     <Card.Text>
       Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary">Proximamente</Button>
   </Card.Body>
 </Card>
 
@@ -85,7 +85,7 @@ El objetico de este taller es crear un primer encuentro con la materia prima: la
     <Card.Text>
       Curso donde recorremos disintas tecnicas y materiales para poder iniciarte en este mundo
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary">Proximamente</Button>
   </Card.Body>
 </Card>
         </div>
